@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <!-- TODO - Enable this when we have the Google Analytics page set up -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script> -->
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- TODO - Add more keywords for SEO -->
+  <meta name="keywords" content="xai, explainable ai, explainability, interpretablity">
+
+  <title>
+    
+      Decontextualized learning for interpretable hierarchical representations of visual patterns &middot; Explainable AI
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <!-- TODO - Write a better description -->
+  <!-- <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" /> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0f layout">
+
+    <!-- <a href='/contributing.html' class='ribbon'>Contribute!</a> -->
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Explainable AI
+        </a>
+      </h1>
+      <p class="lead">Current research on explainability and interpretability of machine learning algorithms</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item">
+    <p style="font-size: 12px">
+      <input type='text' id='searchTarget' placeholder="Search Repository"/> 
+      <button class="button-23 draw" onClick="search();"><i class="fa fa-search"></i></button>
+    </p>
+  </div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <!-- <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a> -->
+   <!-- <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a> -->
+  <a class="sidebar-nav-item" href="/resources.html">Resources</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">This site is a community effort by the <a href="explainableaiworld.slack.com">Explainable AI</a> members. Please join the group and reach out to the administrators if you have any questions.</p>
+    <p style="font-size: 12px"><span style="font-size: 12px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>. Idea and base code for the website adapted from <a href="https://ml4code.github.io/">ml4code</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Decontextualized learning for interpretable hierarchical representations of visual patterns</h1>
+  <h5>R. Ian Etheredge, Manfred Schartl, Alex Jordan.  2020</h5>
+  <p>
+    
+      [<a href="http://arxiv.org/abs/2009.09893v1" target="_blank">ArXiv</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Decontextualized learning for interpretable hierarchical representations of visual patterns' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Decontextualized learning for interpretable hierarchical representations of visual patterns' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    <br/>
+    
+  </p>
+  <p><p>Apart from discriminative models for classification and object detection
+tasks, the application of deep convolutional neural networks to basic research
+utilizing natural imaging data has been somewhat limited; particularly in cases
+where a set of interpretable features for downstream analysis is needed, a key
+requirement for many scientific investigations. We present an algorithm and
+training paradigm designed specifically to address this: decontextualized
+hierarchical representation learning (DHRL). By combining a generative model
+chaining procedure with a ladder network architecture and latent space
+regularization for inference, DHRL address the limitations of small datasets
+and encourages a disentangled set of hierarchically organized features. In
+addition to providing a tractable path for analyzing complex hierarchal
+patterns using variation inference, this approach is generative and can be
+directly combined with empirical and theoretical approaches. To highlight the
+extensibility and usefulness of DHRL, we demonstrate this method in application
+to a question from evolutionary biology.</p>
+</p>
+
+  <!-- TODO: <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON("/publications-metadata/etheredge2020decontextualized.json", function(data) {
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script> -->
+
+</div>
+
+    </div>
+
+  </body>
+</html>

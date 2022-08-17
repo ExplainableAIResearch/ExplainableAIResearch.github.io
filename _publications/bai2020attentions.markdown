@@ -1,0 +1,28 @@
+---
+layout: publication
+title: "Why Attentions May Not Be Interpretable?"
+authors: Bing Bai, Jian Liang, Guanhua Zhang, Hao Li, Kun Bai, Fei Wang
+conference: 
+year: 2020
+additional_links: 
+   - {name: "ArXiv", url: "http://arxiv.org/abs/2006.05656v4"}
+tags: []
+---
+Attention-based methods have played important roles in model interpretations,
+where the calculated attention weights are expected to highlight the critical
+parts of inputs~(e.g., keywords in sentences). However, recent research found
+that attention-as-importance interpretations often do not work as we expected.
+For example, learned attention weights sometimes highlight less meaningful
+tokens like "[SEP]", ",", and ".", and are frequently uncorrelated with other
+feature importance indicators like gradient-based measures. A recent debate
+over whether attention is an explanation or not has drawn considerable
+interest. In this paper, we demonstrate that one root cause of this phenomenon
+is the combinatorial shortcuts, which means that, in addition to the
+highlighted parts, the attention weights themselves may carry extra information
+that could be utilized by downstream models after attention layers. As a
+result, the attention weights are no longer pure importance indicators. We
+theoretically analyze combinatorial shortcuts, design one intuitive experiment
+to show their existence, and propose two methods to mitigate this issue. We
+conduct empirical studies on attention-based interpretation models. The results
+show that the proposed methods can effectively improve the interpretability of
+attention mechanisms.

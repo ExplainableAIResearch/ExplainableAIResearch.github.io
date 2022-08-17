@@ -1,0 +1,23 @@
+---
+layout: publication
+title: "Understanding Black-box Predictions via Influence Functions"
+authors: Pang Wei Koh, Percy Liang
+conference: 
+year: 2017
+additional_links: 
+   - {name: "ArXiv", url: "http://arxiv.org/abs/1703.04730v3"}
+tags: []
+---
+How can we explain the predictions of a black-box model? In this paper, we
+use influence functions -- a classic technique from robust statistics -- to
+trace a model's prediction through the learning algorithm and back to its
+training data, thereby identifying training points most responsible for a given
+prediction. To scale up influence functions to modern machine learning
+settings, we develop a simple, efficient implementation that requires only
+oracle access to gradients and Hessian-vector products. We show that even on
+non-convex and non-differentiable models where the theory breaks down,
+approximations to influence functions can still provide valuable information.
+On linear models and convolutional neural networks, we demonstrate that
+influence functions are useful for multiple purposes: understanding model
+behavior, debugging models, detecting dataset errors, and even creating
+visually-indistinguishable training-set attacks.

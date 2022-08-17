@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <!-- TODO - Enable this when we have the Google Analytics page set up -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107339008-1"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-107339008-1');
+  </script> -->
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- TODO - Add more keywords for SEO -->
+  <meta name="keywords" content="xai, explainable ai, explainability, interpretablity">
+
+  <title>
+    
+      Interpretable Optimal Stopping &middot; Explainable AI
+    
+  </title>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.svg">
+  <!-- TODO - Write a better description -->
+  <!-- <link rel="search" href="/public/opensearchdescription.xml" 
+      type="application/opensearchdescription+xml" 
+      title="ML4Code" /> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+</head>
+
+
+  <body class="theme-base-0f layout">
+
+    <!-- <a href='/contributing.html' class='ribbon'>Contribute!</a> -->
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Explainable AI
+        </a>
+      </h1>
+      <p class="lead">Current research on explainability and interpretability of machine learning algorithms</p>      
+    </div>
+
+  <nav class="sidebar-nav">
+   <div class="sidebar-item">
+    <p style="font-size: 12px">
+      <input type='text' id='searchTarget' placeholder="Search Repository"/> 
+      <button class="button-23 draw" onClick="search();"><i class="fa fa-search"></i></button>
+    </p>
+  </div>
+   <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
+   <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
+   <!-- <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a> -->
+   <!-- <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a> -->
+  <a class="sidebar-nav-item" href="/resources.html">Resources</a>
+  <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p style="font-size: 12px">This site is a community effort by the <a href="explainableaiworld.slack.com">Explainable AI</a> members. Please join the group and reach out to the administrators if you have any questions.</p>
+    <p style="font-size: 12px"><span style="font-size: 12px">
+      Made with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde">Hyde</a>. Idea and base code for the website adapted from <a href="https://ml4code.github.io/">ml4code</a>.
+    </span></p>
+  </div>
+</div></div>
+
+<script>
+$("#searchTarget").keydown(function (e) {	
+  if (e.keyCode == 13) {
+    search();
+  }
+});
+
+function search() {
+  try {
+    ga('send', 'event', 'search', 'search', $("#searchTarget").val());
+  } finally {
+    window.location = "/papers.html#" + $("#searchTarget").val();
+  }
+}
+</script>
+
+
+    <div class="content container">
+      <div class="page">
+  <h1 class="page-title">Interpretable Optimal Stopping</h1>
+  <h5>Dragos Florin Ciocan, Velibor V. Mišić.  2018</h5>
+  <p>
+    
+      [<a href="http://arxiv.org/abs/1812.07211v2" target="_blank">ArXiv</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Interpretable Optimal Stopping' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Interpretable Optimal Stopping' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    <br/>
+    
+  </p>
+  <p><p>Optimal stopping is the problem of deciding when to stop a stochastic system
+to obtain the greatest reward, arising in numerous application areas such as
+finance, healthcare and marketing. State-of-the-art methods for
+high-dimensional optimal stopping involve approximating the value function or
+the continuation value, and then using that approximation within a greedy
+policy. Although such policies can perform very well, they are generally not
+guaranteed to be interpretable; that is, a decision maker may not be able to
+easily see the link between the current system state and the policy’s action.
+In this paper, we propose a new approach to optimal stopping, wherein the
+policy is represented as a binary tree, in the spirit of naturally
+interpretable tree models commonly used in machine learning. We show that the
+class of tree policies is rich enough to approximate the optimal policy. We
+formulate the problem of learning such policies from observed trajectories of
+the stochastic system as a sample average approximation (SAA) problem. We prove
+that the SAA problem converges under mild conditions as the sample size
+increases, but that computationally even immediate simplifications of the SAA
+problem are theoretically intractable. We thus propose a tractable heuristic
+for approximately solving the SAA problem, by greedily constructing the tree
+from the top down. We demonstrate the value of our approach by applying it to
+the canonical problem of option pricing, using both synthetic instances and
+instances using real S&amp;P-500 data. Our method obtains policies that (1)
+outperform state-of-the-art non-interpretable methods, based on
+simulation-regression and martingale duality, and (2) possess a remarkably
+simple and intuitive structure.</p>
+</p>
+
+  <!-- TODO: <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
+
+    </ul>
+  </p>
+
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON("/publications-metadata/ciocan2018interpretable.json", function(data) {
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
+      });
+  </script> -->
+
+</div>
+
+    </div>
+
+  </body>
+</html>
