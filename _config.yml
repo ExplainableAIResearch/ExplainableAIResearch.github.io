@@ -2,7 +2,7 @@
 title:               Explainable AI
 tagline:             'a living literature review'
 description:         'Current research on explainability and interpretability of machine learning algorithms'
-url:                 https://xai_research.github.io
+url:                 https://explainableairesearch.github.io
 baseurl:             ''
 
 collections:
