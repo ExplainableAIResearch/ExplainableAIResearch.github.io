@@ -5,7 +5,7 @@ authors: Brent Mittelstadt, Chris Russell, Sandra Wachter
 conference: 
 year: 2018
 additional_links: 
-   - {name: "ArXiv", url: "http://dx.doi.org/10.1145/3287560.3287574"}
+	- {name: "ArXiv", url: "http://dx.doi.org/10.1145/3287560.3287574"}
 tags: []
 ---
 Recent work on interpretability in machine learning and AI has focused on the

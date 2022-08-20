@@ -5,7 +5,7 @@ authors: Oana-Maria Camburu
 conference: 
 year: 2020
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2010.01496v2"}
+	- {name: "ArXiv", url: "http://arxiv.org/abs/2010.01496v2"}
 tags: []
 ---
 Deep neural networks are becoming more and more popular due to their
