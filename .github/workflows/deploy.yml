@@ -30,9 +30,9 @@ jobs:
           python -m pip install nltk gensim scipy
           python ${{ github.workspace }}/etc/compute_topics.py ${{ github.workspace }}/_site/paper-abstracts.json ${{ github.workspace }}/_site/topics.json
           python ${{ github.workspace }}/etc/compute_related.py ${{ github.workspace }}/_site/paper-abstracts.json ${{ github.workspace }}/_site/publications-metadata/
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: master
+#     - name: Deploy
+#       uses: peaceiris/actions-gh-pages@v3
+#       with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./_site
+#           publish_branch: master
