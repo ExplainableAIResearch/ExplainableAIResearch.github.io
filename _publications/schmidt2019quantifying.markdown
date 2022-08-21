@@ -5,7 +5,7 @@ authors: Philipp Schmidt, Felix Biessmann
 conference: 
 year: 2019
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1901.08558v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1901.08558v1"}
 tags: []
 ---
 Decisions by Machine Learning (ML) models have become ubiquitous. Trusting

@@ -1,0 +1,20 @@
+---
+layout: publication
+title: "Interpretation of NLP models through input marginalization"
+authors: Siwon Kim, Jihun Yi, Eunji Kim, Sungroh Yoon
+conference: 
+year: 2020
+additional_links: 
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2010.13984v1"}
+tags: []
+---
+To demystify the "black box" property of deep neural networks for natural
+language processing (NLP), several methods have been proposed to interpret
+their predictions by measuring the change in prediction probability after
+erasing each token of an input. Since existing methods replace each token with
+a predefined value (i.e., zero), the resulting sentence lies out of the
+training data distribution, yielding misleading interpretations. In this study,
+we raise the out-of-distribution problem induced by the existing interpretation
+methods and present a remedy; we propose to marginalize each token out. We
+interpret various NLP models trained for sentiment analysis and natural
+language inference using the proposed method.

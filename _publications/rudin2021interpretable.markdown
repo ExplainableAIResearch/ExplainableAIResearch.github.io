@@ -5,7 +5,7 @@ authors: Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, C
 conference: Statistics Surveys, 2021
 year: 2021
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2103.11251v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2103.11251v2"}
 tags: []
 ---
 Interpretability in machine learning (ML) is crucial for high stakes

@@ -21,7 +21,7 @@ def create_file(info):
     authors = ", ".join([a.name for a in info.authors])
     conference = info.journal_ref if info.journal_ref else ""
     
-    with open(f"_publications/{get_first_author_surname(info.authors)}{year}{get_title_first_word(info.title)}.markdown", "w") as f:
+    with open(f"../_publications/{get_first_author_surname(info.authors)}{year}{get_title_first_word(info.title)}.markdown", "w") as f:
         f.write("---\n")
         f.write("layout: publication\n")
         f.write(f"title: \"{info.title}\"\n")
@@ -49,22 +49,24 @@ def search_paper(name):
 
 
 
-# adding = True
-# while(adding):
-#     paper_name = str(input("Input the paper title..\n")).strip()
-#     search_paper(paper_name)
-#     a = str(input("Do you want to add new paper? [y/n]"))
-#     if (a == "y"):
-#         adding = True
-#     else:
-#         adding = False
+adding = True
+while(adding):
+    paper_name = str(input("Input the paper title..\n")).strip()
+    search_paper(paper_name)
+    a = str(input("Do you want to add new paper? [y/n]"))
+    if (a == "y"):
+        adding = True
+    else:
+        adding = False
 
-import pandas
+# import pandas
 
-# with open("data/appl.csv", 'r') as f:
-df = pandas.read_csv("data/appl.csv", header=None)
-df = df.rename(columns=df.iloc[0]).drop(df.index[0])
-for i in df.Title:
-    # print(i)
-    search_paper(i)
+# df = pandas.read_csv("../data/seq.csv", header=None)
+# df = df.rename(columns=df.iloc[0]).drop(df.index[0])
+# for i in df.Title:
+#     print("---")
+#     print(i)
+#     print("---")
+#     search_paper(i)
+    
 

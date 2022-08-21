@@ -5,7 +5,7 @@ authors: Wojciech Samek, Klaus-Robert Müller
 conference: 
 year: 2019
 additional_links: 
-   - {name: "ArXiv", url: "http://dx.doi.org/10.1007/978-3-030-28954-6_1"}
+    - {name: "ArXiv", url: "http://dx.doi.org/10.1007/978-3-030-28954-6_1"}
 tags: []
 ---
 In recent years, machine learning (ML) has become a key enabling technology

@@ -5,7 +5,7 @@ authors: Eric Wallace, Shi Feng, Jordan Boyd-Graber
 conference: 
 year: 2018
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1809.02847v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1809.02847v2"}
 tags: []
 ---
 Local model interpretation methods explain individual predictions by

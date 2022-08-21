@@ -1,0 +1,21 @@
+---
+layout: publication
+title: "Unsupervised Learning of Disentangled and Interpretable Representations from Sequential Data"
+authors: Wei-Ning Hsu, Yu Zhang, James Glass
+conference: 
+year: 2017
+additional_links: 
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1709.07902v1"}
+tags: []
+---
+We present a factorized hierarchical variational autoencoder, which learns
+disentangled and interpretable representations from sequential data without
+supervision. Specifically, we exploit the multi-scale nature of information in
+sequential data by formulating it explicitly within a factorized hierarchical
+graphical model that imposes sequence-dependent priors and sequence-independent
+priors to different sets of latent variables. The model is evaluated on two
+speech corpora to demonstrate, qualitatively, its ability to transform speakers
+or linguistic content by manipulating different sets of latent variables; and
+quantitatively, its ability to outperform an i-vector baseline for speaker
+verification and reduce the word error rate by as much as 35% in mismatched
+train/test scenarios for automatic speech recognition tasks.

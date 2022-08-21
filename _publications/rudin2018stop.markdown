@@ -5,7 +5,7 @@ authors: Cynthia Rudin
 conference: Nature Machine Intelligence, Vol 1, May 2019, 206-215
 year: 2018
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1811.10154v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1811.10154v3"}
 tags: []
 ---
 Black box machine learning models are currently being used for high stakes

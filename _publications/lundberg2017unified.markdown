@@ -5,7 +5,7 @@ authors: Scott Lundberg, Su-In Lee
 conference: 
 year: 2017
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1705.07874v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1705.07874v2"}
 tags: []
 ---
 Understanding why a model makes a certain prediction can be as crucial as the

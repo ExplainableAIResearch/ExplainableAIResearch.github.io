@@ -1,0 +1,24 @@
+---
+layout: publication
+title: "Obtaining Faithful Interpretations from Compositional Neural Networks"
+authors: Sanjay Subramanian, Ben Bogin, Nitish Gupta, Tomer Wolfson, Sameer Singh, Jonathan Berant, Matt Gardner
+conference: 
+year: 2020
+additional_links: 
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2005.00724v2"}
+tags: []
+---
+Neural module networks (NMNs) are a popular approach for modeling
+compositionality: they achieve high accuracy when applied to problems in
+language and vision, while reflecting the compositional structure of the
+problem in the network architecture. However, prior work implicitly assumed
+that the structure of the network modules, describing the abstract reasoning
+process, provides a faithful explanation of the model's reasoning; that is,
+that all modules perform their intended behaviour. In this work, we propose and
+conduct a systematic evaluation of the intermediate outputs of NMNs on NLVR2
+and DROP, two datasets which require composing multiple reasoning steps. We
+find that the intermediate outputs differ from the expected output,
+illustrating that the network structure does not provide a faithful explanation
+of model behaviour. To remedy that, we train the model with auxiliary
+supervision and propose particular choices for module architecture that yield
+much better faithfulness, at a minimal cost to accuracy.

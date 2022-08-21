@@ -5,7 +5,7 @@ authors: André Artelt, Valerie Vaquet, Riza Velioglu, Fabian Hinder, Johannes B
 conference: 
 year: 2021
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2103.02354v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2103.02354v3"}
 tags: []
 ---
 Transparency is a fundamental requirement for decision making systems when

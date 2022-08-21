@@ -5,7 +5,7 @@ authors: Karen Simonyan, Andrea Vedaldi, Andrew Zisserman
 conference: 
 year: 2013
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1312.6034v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1312.6034v2"}
 tags: []
 ---
 This paper addresses the visualisation of image classification models, learnt

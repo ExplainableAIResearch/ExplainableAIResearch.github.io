@@ -5,7 +5,7 @@ authors: Danish Pruthi, Rachit Bansal, Bhuwan Dhingra, Livio Baldini Soares, Mic
 conference: 
 year: 2020
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2012.00893v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2012.00893v2"}
 tags: []
 ---
 While many methods purport to explain predictions by highlighting salient

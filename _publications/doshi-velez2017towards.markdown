@@ -5,7 +5,7 @@ authors: Finale Doshi-Velez, Been Kim
 conference: 
 year: 2017
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1702.08608v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1702.08608v2"}
 tags: []
 ---
 As machine learning systems become ubiquitous, there has been a surge of

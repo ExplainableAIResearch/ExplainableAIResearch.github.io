@@ -5,7 +5,7 @@ authors: David Alvarez-Melis, Tommi S. Jaakkola
 conference: 
 year: 2018
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1806.08049v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1806.08049v1"}
 tags: []
 ---
 We argue that robustness of explanations---i.e., that similar inputs should

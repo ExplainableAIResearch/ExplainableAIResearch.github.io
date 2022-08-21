@@ -5,7 +5,7 @@ authors: Erika Puiutta, Eric MSP Veith
 conference: 
 year: 2020
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2005.06247v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2005.06247v1"}
 tags: []
 ---
 Explainable Artificial Intelligence (XAI), i.e., the development of more

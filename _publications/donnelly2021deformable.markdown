@@ -1,0 +1,25 @@
+---
+layout: publication
+title: "Deformable ProtoPNet: An Interpretable Image Classifier Using Deformable Prototypes"
+authors: Jon Donnelly, Alina Jade Barnett, Chaofan Chen
+conference: 2022 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition (CVPR)
+year: 2021
+additional_links: 
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2111.15000v2"}
+tags: []
+---
+We present a deformable prototypical part network (Deformable ProtoPNet), an
+interpretable image classifier that integrates the power of deep learning and
+the interpretability of case-based reasoning. This model classifies input
+images by comparing them with prototypes learned during training, yielding
+explanations in the form of "this looks like that." However, while previous
+methods use spatially rigid prototypes, we address this shortcoming by
+proposing spatially flexible prototypes. Each prototype is made up of several
+prototypical parts that adaptively change their relative spatial positions
+depending on the input image. Consequently, a Deformable ProtoPNet can
+explicitly capture pose variations and context, improving both model accuracy
+and the richness of explanations provided. Compared to other case-based
+interpretable models using prototypes, our approach achieves state-of-the-art
+accuracy and gives an explanation with greater context. The code is available
+at https://github.com/jdonnelly36/Deformable-ProtoPNet.

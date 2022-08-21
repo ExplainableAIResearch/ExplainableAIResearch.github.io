@@ -5,7 +5,7 @@ authors: Xuhong Li, Haoyi Xiong, Xingjian Li, Xuanyu Wu, Xiao Zhang, Ji Liu, Jia
 conference: 
 year: 2021
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2103.10689v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2103.10689v3"}
 tags: []
 ---
 Deep neural networks have been well-known for their superb handling of

@@ -5,7 +5,7 @@ authors: Richard Tomsett, Dan Harborne, Supriyo Chakraborty, Prudhvi Gurram, Alu
 conference: 
 year: 2019
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1912.01451v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1912.01451v1"}
 tags: []
 ---
 Saliency maps are a popular approach to creating post-hoc explanations of

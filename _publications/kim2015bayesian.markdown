@@ -1,0 +1,22 @@
+---
+layout: publication
+title: "The Bayesian Case Model: A Generative Approach for Case-Based Reasoning and Prototype Classification"
+authors: Been Kim, Cynthia Rudin, Julie Shah
+conference: NIPS 2014
+year: 2015
+additional_links: 
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1503.01161v1"}
+tags: []
+---
+We present the Bayesian Case Model (BCM), a general framework for Bayesian
+case-based reasoning (CBR) and prototype classification and clustering. BCM
+brings the intuitive power of CBR to a Bayesian generative framework. The BCM
+learns prototypes, the "quintessential" observations that best represent
+clusters in a dataset, by performing joint inference on cluster labels,
+prototypes and important features. Simultaneously, BCM pursues sparsity by
+learning subspaces, the sets of features that play important roles in the
+characterization of the prototypes. The prototype and subspace representation
+provides quantitative benefits in interpretability while preserving
+classification accuracy. Human subject experiments verify statistically
+significant improvements to participants' understanding when using explanations
+produced by BCM, compared to those given by prior art.

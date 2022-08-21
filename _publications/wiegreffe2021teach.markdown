@@ -5,7 +5,7 @@ authors: Sarah Wiegreffe, Ana Marasović
 conference: 
 year: 2021
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2102.12060v4"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2102.12060v4"}
 tags: []
 ---
 Explainable NLP (ExNLP) has increasingly focused on collecting

@@ -5,7 +5,7 @@ authors: Othman Benchekroun, Adel Rahimi, Qini Zhang, Tetiana Kodliuk
 conference: 
 year: 2020
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/2010.11273v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2010.11273v2"}
 tags: []
 ---
 Explainable AI (XAI) is paramount in industry-grade AI; however existing

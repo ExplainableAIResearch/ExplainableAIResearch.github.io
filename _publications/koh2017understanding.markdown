@@ -5,7 +5,7 @@ authors: Pang Wei Koh, Percy Liang
 conference: 
 year: 2017
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1703.04730v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1703.04730v3"}
 tags: []
 ---
 How can we explain the predictions of a black-box model? In this paper, we

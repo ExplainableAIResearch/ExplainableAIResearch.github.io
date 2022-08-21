@@ -5,7 +5,7 @@ authors: Jason Yosinski, Jeff Clune, Anh Nguyen, Thomas Fuchs, Hod Lipson
 conference: 
 year: 2015
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1506.06579v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1506.06579v1"}
 tags: []
 ---
 Recent years have produced great advances in training large, deep neural

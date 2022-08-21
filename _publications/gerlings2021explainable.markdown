@@ -5,7 +5,7 @@ authors: Julie Gerlings, Millie Søndergaard Jensen, Arisa Shollo
 conference: 
 year: 2021
 additional_links: 
-   - {name: "ArXiv", url: "http://dx.doi.org/10.1007/978-3-030-83620-7_7"}
+    - {name: "ArXiv", url: "http://dx.doi.org/10.1007/978-3-030-83620-7_7"}
 tags: []
 ---
 Advances in AI technologies have resulted in superior levels of AI-based

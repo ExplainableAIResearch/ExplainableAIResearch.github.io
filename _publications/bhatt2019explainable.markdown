@@ -5,7 +5,7 @@ authors: Umang Bhatt, Alice Xiang, Shubham Sharma, Adrian Weller, Ankur Taly, Yu
 conference: 
 year: 2019
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1909.06342v4"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1909.06342v4"}
 tags: []
 ---
 Explainable machine learning offers the potential to provide stakeholders

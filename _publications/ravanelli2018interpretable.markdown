@@ -5,7 +5,7 @@ authors: Mirco Ravanelli, Yoshua Bengio
 conference: 
 year: 2018
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1811.09725v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1811.09725v2"}
 tags: []
 ---
 Deep learning is currently playing a crucial role toward higher levels of

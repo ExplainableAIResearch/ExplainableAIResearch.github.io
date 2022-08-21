@@ -1,0 +1,24 @@
+---
+layout: publication
+title: "Aligning Faithful Interpretations with their Social Attribution"
+authors: Alon Jacovi, Yoav Goldberg
+conference: 
+year: 2020
+additional_links: 
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2006.01067v3"}
+tags: []
+---
+We find that the requirement of model interpretations to be faithful is vague
+and incomplete. With interpretation by textual highlights as a case-study, we
+present several failure cases. Borrowing concepts from social science, we
+identify that the problem is a misalignment between the causal chain of
+decisions (causal attribution) and the attribution of human behavior to the
+interpretation (social attribution). We re-formulate faithfulness as an
+accurate attribution of causality to the model, and introduce the concept of
+aligned faithfulness: faithful causal chains that are aligned with their
+expected social behavior. The two steps of causal attribution and social
+attribution together complete the process of explaining behavior. With this
+formalization, we characterize various failures of misaligned faithful
+highlight interpretations, and propose an alternative causal chain to remedy
+the issues. Finally, we implement highlight explanations of the proposed causal
+format using contrastive explanations.

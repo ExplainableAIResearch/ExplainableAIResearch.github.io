@@ -5,7 +5,7 @@ authors: Leila Arras, Ahmed Osman, Klaus-Robert Müller, Wojciech Samek
 conference: 
 year: 2019
 additional_links: 
-   - {name: "ArXiv", url: "http://arxiv.org/abs/1904.11829v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1904.11829v3"}
 tags: []
 ---
 Recently, several methods have been proposed to explain the predictions of
