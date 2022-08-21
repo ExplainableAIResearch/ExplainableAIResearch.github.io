@@ -28,7 +28,7 @@ def create_file(info):
         f.write(f"authors: {authors}\n")
         f.write(f"conference: {conference}\n")
         f.write(f"year: {year}\n")
-        f.write(f"additional_links: \n\t- {{name: \"ArXiv\", url: \"{arxiv_link}\"}}\n")
+        f.write(f"additional_links: \n    - {{name: \"ArXiv\", url: \"{arxiv_link}\"}}\n")
         f.write(f"tags: [""]\n")
         f.write("---\n")
         f.write(summary)
