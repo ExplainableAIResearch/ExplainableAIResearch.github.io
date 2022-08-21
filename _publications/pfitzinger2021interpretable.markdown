@@ -5,7 +5,7 @@ authors: Johann Pfitzinger
 conference: 
 year: 2021
 additional_links: 
-	- {name: "ArXiv", url: "http://arxiv.org/abs/2106.05536v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2106.05536v1"}
 tags: []
 ---
 Adoption of deep neural networks in fields such as economics or finance has

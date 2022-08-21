@@ -5,7 +5,7 @@ authors: Scott Cheng-Hsin Yang, Tomas Folke, Patrick Shafto
 conference: 
 year: 2022
 additional_links: 
-	- {name: "ArXiv", url: "http://arxiv.org/abs/2205.08452v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2205.08452v2"}
 tags: []
 ---
 The goal of explainable Artificial Intelligence (XAI) is to generate

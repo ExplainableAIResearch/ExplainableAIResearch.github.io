@@ -5,7 +5,7 @@ authors: Richard L. Phillips, Kyu Hyun Chang, Sorelle A. Friedler
 conference: 
 year: 2017
 additional_links: 
-	- {name: "ArXiv", url: "http://arxiv.org/abs/1708.00049v2"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1708.00049v2"}
 tags: []
 ---
 Active learning has long been a topic of study in machine learning. However,

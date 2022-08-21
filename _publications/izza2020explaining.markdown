@@ -5,7 +5,7 @@ authors: Yacine Izza, Alexey Ignatiev, Joao Marques-Silva
 conference: 
 year: 2020
 additional_links: 
-	- {name: "ArXiv", url: "http://arxiv.org/abs/2010.11034v1"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2010.11034v1"}
 tags: []
 ---
 Decision trees (DTs) epitomize what have become to be known as interpretable

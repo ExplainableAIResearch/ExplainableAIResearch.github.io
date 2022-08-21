@@ -5,7 +5,7 @@ authors: Renuka Sindhgatta, Chun Ouyang, Catarina Moreira
 conference: 
 year: 2019
 additional_links: 
-	- {name: "ArXiv", url: "http://arxiv.org/abs/1912.10558v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/1912.10558v3"}
 tags: []
 ---
 Modern predictive analytics underpinned by machine learning techniques has

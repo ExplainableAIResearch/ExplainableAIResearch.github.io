@@ -5,7 +5,7 @@ authors: Leonardo Lucio Custode, Giovanni Iacca
 conference: 
 year: 2020
 additional_links: 
-	- {name: "ArXiv", url: "http://arxiv.org/abs/2012.07723v3"}
+    - {name: "ArXiv", url: "http://arxiv.org/abs/2012.07723v3"}
 tags: []
 ---
 Reinforcement learning techniques achieved human-level performance in several
