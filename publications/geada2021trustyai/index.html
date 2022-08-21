@@ -20,7 +20,7 @@
 
   <title>
     
-      Explore ML4Code papers with Topics &middot; Explainable AI
+      TrustyAI Explainability Toolkit &middot; Explainable AI
     
   </title>
 
@@ -77,7 +77,7 @@
    <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
    <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
    <!-- <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a> -->
-   <!-- <a class="sidebar-nav-item active" href="/topic-viz.html">Topic-based Explorer</a> -->
+   <!-- <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a> -->
   <a class="sidebar-nav-item" href="/resources.html">Resources</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
   </nav>
@@ -108,62 +108,55 @@ function search() {
 
 
     <div class="content container">
-      <h2>Topic-based Explorer</h2>
-<p>Using topic-modelling the following topics have been extracted. The top stemmed words apprear below. 
-  Please change the slider to present the papers that mostly related to the appropria topics</p>
-<div id="topicslider">
-</div>
-<p>
-<ul id="toppapers">
-  <li>Please move the sliders to look at the papers.</li>
-</ul>
+      <div class="page">
+  <h1 class="page-title">TrustyAI Explainability Toolkit</h1>
+  <h5>Rob Geada, Tommaso Teofili, Rui Vieira, Rebecca Whitworth, Daniele Zonca.  2021</h5>
+  <p>
+    
+      [<a href="http://arxiv.org/abs/2104.12717v2" target="_blank">ArXiv</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=TrustyAI Explainability Toolkit' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=TrustyAI Explainability Toolkit' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    <br/>
+    
+  </p>
+  <p><p>Artificial intelligence (AI) is becoming increasingly more popular and can be
+found in workplaces and homes around the world. The decisions made by such
+“black box” systems are often opaque; that is, so complex as to be functionally
+impossible to understand. How do we ensure that these systems are behaving as
+desired? TrustyAI is an initiative which looks into explainable artificial
+intelligence (XAI) solutions to address this issue of explainability in the
+context of both AI models and decision services. This paper presents the
+TrustyAI Explainability Toolkit, a Java and Python library that provides XAI
+explanations of decision services and predictive models for both enterprise and
+data science use-cases. We describe the TrustyAI implementations and extensions
+to techniques such as LIME, SHAP and counterfactuals, which are benchmarked
+against existing implementations in a variety of experiments.</p>
 </p>
 
+  <!-- TODO: <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
 
+    </ul>
+  </p>
 
-<script>
-  var all_papers = null;
-  var num_topics = -1;
-
-  $(document).ready(
-    function() {
-      $.getJSON('/topics.json', function(data) {
-        all_papers=data.paper_data;
-        num_topics = data.topics.length;
-        html = "";
-        for (let i=0; i < num_topics; i++) {
-            html += '<tag style="white-space: nowrap;">'+ data.topics[i].join(", ") +' <input type="range" min="0" max="10" value="0" style="width:50px" id="topicSlider'+i+'"></tag> '
-        }
-        $("#topicslider").append(html);
-        for (let i=0; i < num_topics; i++) {
-          $("#topicSlider"+i).on("change", renderPapers);
-        }
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON("/publications-metadata/geada2021trustyai.json", function(data) {
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
       });
-    });
+  </script> -->
 
-  function scorePaper(paper_id) {
-    let score = 0;
-    topic_dist = all_papers[paper_id].topic_distr;
-    for (let i=0; i < num_topics; i++) {
-      score += $("#topicSlider"+i).val() * topic_dist[i];
-    }
-    return score;
-  }
+</div>
 
-  function renderPapers(e, u) {
-    paper_idxs = [];
-    for (let i=0; i < all_papers.length; i++) {
-      paper_idxs.push([i, scorePaper(i)]);
-    }
-    paper_idxs = paper_idxs.sort(function(a,b){return b[1] - a[1]});
-    
-    $("#toppapers").text("");
-    for (let i=0; i < 20; i++) {
-      data = all_papers[paper_idxs[i][0]];
-      $("#toppapers").append("<li><a href='/publications/"+data.key+"'>"+ data.title +"</a>. " + data.year + "</li>");
-    }
-  }
-</script>
     </div>
 
   </body>

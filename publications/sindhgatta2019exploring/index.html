@@ -20,7 +20,7 @@
 
   <title>
     
-      Explore ML4Code papers with Topics &middot; Explainable AI
+      Exploring Interpretability for Predictive Process Analytics &middot; Explainable AI
     
   </title>
 
@@ -77,7 +77,7 @@
    <a class="sidebar-nav-item" href="/papers.html">List of Papers</a>
    <a class="sidebar-nav-item" href="/tags.html">Papers by Tag</a>
    <!-- <a class="sidebar-nav-item" href="/tsne-viz.html">2D Map of Papers</a> -->
-   <!-- <a class="sidebar-nav-item active" href="/topic-viz.html">Topic-based Explorer</a> -->
+   <!-- <a class="sidebar-nav-item" href="/topic-viz.html">Topic-based Explorer</a> -->
   <a class="sidebar-nav-item" href="/resources.html">Resources</a>
   <a class="sidebar-nav-item" href="/contributing.html">Contributing</a>
   </nav>
@@ -108,62 +108,62 @@ function search() {
 
 
     <div class="content container">
-      <h2>Topic-based Explorer</h2>
-<p>Using topic-modelling the following topics have been extracted. The top stemmed words apprear below. 
-  Please change the slider to present the papers that mostly related to the appropria topics</p>
-<div id="topicslider">
-</div>
-<p>
-<ul id="toppapers">
-  <li>Please move the sliders to look at the papers.</li>
-</ul>
+      <div class="page">
+  <h1 class="page-title">Exploring Interpretability for Predictive Process Analytics</h1>
+  <h5>Renuka Sindhgatta, Chun Ouyang, Catarina Moreira.  2019</h5>
+  <p>
+    
+      [<a href="http://arxiv.org/abs/1912.10558v3" target="_blank">ArXiv</a>]
+    
+    &nbsp;<a href='http://scholar.google.com/scholar?q=Exploring Interpretability for Predictive Process Analytics' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
+    &nbsp;<a href='https://www.semanticscholar.org/search?q=Exploring Interpretability for Predictive Process Analytics' target="_blank"><img style="display: inline; margin: 0;" src="/public/media/semscholar.png"/></a>
+    <br/>
+    
+  </p>
+  <p><p>Modern predictive analytics underpinned by machine learning techniques has
+become a key enabler to the automation of data-driven decision making. In the
+context of business process management, predictive analytics has been applied
+to making predictions about the future state of an ongoing business process
+instance, for example, when will the process instance complete and what will be
+the outcome upon completion. Machine learning models can be trained on event
+log data recording historical process execution to build the underlying
+predictive models. Multiple techniques have been proposed so far which encode
+the information available in an event log and construct input features required
+to train a predictive model. While accuracy has been a dominant criterion in
+the choice of various techniques, they are often applied as a black-box in
+building predictive models. In this paper, we derive explanations using
+interpretable machine learning techniques to compare and contrast the
+suitability of multiple predictive models of high accuracy. The explanations
+allow us to gain an understanding of the underlying reasons for a prediction
+and highlight scenarios where accuracy alone may not be sufficient in assessing
+the suitability of techniques used to encode event log data to features used by
+a predictive model. Findings from this study motivate the need and importance
+to incorporate interpretability in predictive process analytics.</p>
 </p>
 
+  <!-- TODO: <h6>Similar Work</h6>
+  <p>
+    <ul id="relwork">
 
+    </ul>
+  </p>
 
-<script>
-  var all_papers = null;
-  var num_topics = -1;
-
-  $(document).ready(
-    function() {
-      $.getJSON('/topics.json', function(data) {
-        all_papers=data.paper_data;
-        num_topics = data.topics.length;
-        html = "";
-        for (let i=0; i < num_topics; i++) {
-            html += '<tag style="white-space: nowrap;">'+ data.topics[i].join(", ") +' <input type="range" min="0" max="10" value="0" style="width:50px" id="topicSlider'+i+'"></tag> '
-        }
-        $("#topicslider").append(html);
-        for (let i=0; i < num_topics; i++) {
-          $("#topicSlider"+i).on("change", renderPapers);
-        }
+  <script>  
+    $(document).ready(
+      function() {
+        $.getJSON("/publications-metadata/sindhgatta2019exploring.json", function(data) {
+          num_papers = data.length;
+          html = "";
+          for (let i=0; i < num_papers; i++) {
+              html += '<li><a href="/publications/' + data[i][0] + '">'+ data[i][1] +'</a></li>'
+          }
+          $("#relwork").append(html);
+        });
       });
-    });
+  </script> -->
 
-  function scorePaper(paper_id) {
-    let score = 0;
-    topic_dist = all_papers[paper_id].topic_distr;
-    for (let i=0; i < num_topics; i++) {
-      score += $("#topicSlider"+i).val() * topic_dist[i];
-    }
-    return score;
-  }
+</div>
 
-  function renderPapers(e, u) {
-    paper_idxs = [];
-    for (let i=0; i < all_papers.length; i++) {
-      paper_idxs.push([i, scorePaper(i)]);
-    }
-    paper_idxs = paper_idxs.sort(function(a,b){return b[1] - a[1]});
-    
-    $("#toppapers").text("");
-    for (let i=0; i < 20; i++) {
-      data = all_papers[paper_idxs[i][0]];
-      $("#toppapers").append("<li><a href='/publications/"+data.key+"'>"+ data.title +"</a>. " + data.year + "</li>");
-    }
-  }
-</script>
     </div>
 
   </body>
