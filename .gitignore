@@ -1,2 +1,4 @@
 env
 data
+_site
+.jekyll-cache
